@@ -1,23 +1,6 @@
-import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-public class SimpleCalculatorTest {
-    @Test
-    public void TwoPlusTwoShouldEqualFour()
+public class SimpleCalculator {
+    public int add(int num1, int num2)
     {
-        SimpleCalculator calc = new SimpleCalculator();
-        int res = calc.add(2,2);
-        //assertEquals(4, res);
-        //or:
-        assertTrue(res == 4);
+        return num1+num2;
     }
-    @Test
-    public void threePlusSevenShouldEqualTen()
-    {
-        SimpleCalculator calc1 = new SimpleCalculator();
-        assertEquals(10, calc1.add(7,3));
-    }
-
 }
